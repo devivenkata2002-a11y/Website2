@@ -1,0 +1,1126 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-family: "Poppins", sans-serif;
+    color: #63384d;
+
+    background:
+        radial-gradient(circle at 12% 8%, #ffffff 0%, transparent 28%),
+        radial-gradient(circle at 88% 18%, #ffd1e5 0%, transparent 30%),
+        radial-gradient(circle at 50% 100%, #ffe5f1 0%, transparent 35%),
+        linear-gradient(135deg, #fffaff, #ffd8e9 48%, #fff1f7);
+}
+
+
+/* =========================================
+   ❤️ FAST FLOWING HEARTS
+========================================= */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.hearts span {
+    position: absolute;
+    bottom: -80px;
+
+    color: #ed4f91;
+
+    opacity: 0;
+
+    text-shadow:
+        0 0 8px rgba(255, 79, 145, 0.45),
+        0 0 20px rgba(255, 79, 145, 0.2);
+
+    animation: heartFlow 3.5s linear infinite;
+}
+
+.hearts span:nth-child(1) {
+    left: 3%;
+    font-size: 18px;
+    animation-duration: 3s;
+}
+
+.hearts span:nth-child(2) {
+    left: 15%;
+    font-size: 28px;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+}
+
+.hearts span:nth-child(3) {
+    left: 28%;
+    font-size: 17px;
+    animation-duration: 3.2s;
+    animation-delay: 0.2s;
+}
+
+.hearts span:nth-child(4) {
+    left: 41%;
+    font-size: 26px;
+    animation-duration: 4.2s;
+    animation-delay: 0.8s;
+}
+
+.hearts span:nth-child(5) {
+    left: 54%;
+    font-size: 19px;
+    animation-duration: 3.3s;
+    animation-delay: 0.4s;
+}
+
+.hearts span:nth-child(6) {
+    left: 67%;
+    font-size: 30px;
+    animation-duration: 4.5s;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(7) {
+    left: 81%;
+    font-size: 18px;
+    animation-duration: 3.1s;
+    animation-delay: 0.3s;
+}
+
+.hearts span:nth-child(8) {
+    left: 94%;
+    font-size: 27px;
+    animation-duration: 4s;
+    animation-delay: 1.2s;
+}
+
+@keyframes heartFlow {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(0deg)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    30% {
+        transform:
+            translateY(-35vh)
+            translateX(25px)
+            rotate(15deg)
+            scale(0.9);
+    }
+
+    60% {
+        transform:
+            translateY(-70vh)
+            translateX(-25px)
+            rotate(-15deg)
+            scale(1.05);
+    }
+
+    100% {
+        transform:
+            translateY(-120vh)
+            translateX(25px)
+            rotate(25deg)
+            scale(1.2);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   ✨ GOLD SPARKLES
+========================================= */
+
+.sparkles {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+.sparkles span {
+    position: absolute;
+    bottom: -60px;
+
+    color: #e4ad3f;
+
+    font-size: 18px;
+
+    opacity: 0;
+
+    text-shadow:
+        0 0 8px rgba(228, 173, 63, 0.8),
+        0 0 20px rgba(228, 173, 63, 0.35);
+
+    animation: sparkleFlow 5s linear infinite;
+}
+
+.sparkles span:nth-child(1) {
+    left: 9%;
+    animation-duration: 4.5s;
+}
+
+.sparkles span:nth-child(2) {
+    left: 27%;
+    animation-duration: 5.5s;
+    animation-delay: 1s;
+}
+
+.sparkles span:nth-child(3) {
+    left: 45%;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+.sparkles span:nth-child(4) {
+    left: 63%;
+    animation-duration: 4.8s;
+    animation-delay: 1.5s;
+}
+
+.sparkles span:nth-child(5) {
+    left: 79%;
+    animation-duration: 5.5s;
+    animation-delay: 0.8s;
+}
+
+.sparkles span:nth-child(6) {
+    left: 92%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes sparkleFlow {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0.85;
+    }
+
+    50% {
+        transform:
+            translateY(-55vh)
+            rotate(180deg)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translateY(-120vh)
+            rotate(360deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   🎈 BALLOONS
+========================================= */
+
+.party-elements {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 3;
+}
+
+.big-balloon {
+    position: absolute;
+
+    bottom: -180px;
+
+    opacity: 0;
+
+    font-size: 105px;
+
+    filter:
+        drop-shadow(
+            0 10px 16px rgba(180, 60, 110, 0.2)
+        );
+
+    animation: balloonFloat 6s linear infinite;
+}
+
+.balloon-pink {
+    left: 5%;
+
+    font-size: 105px;
+
+    animation-duration: 5.5s;
+    animation-delay: 0s;
+}
+
+.balloon-purple {
+    left: 28%;
+
+    font-size: 120px;
+
+    animation-duration: 7s;
+    animation-delay: 1.5s;
+}
+
+.balloon-gold {
+    left: 63%;
+
+    font-size: 115px;
+
+    animation-duration: 6s;
+    animation-delay: 0.8s;
+}
+
+.balloon-pink2 {
+    left: 87%;
+
+    font-size: 100px;
+
+    animation-duration: 7.5s;
+    animation-delay: 2s;
+}
+
+@keyframes balloonFloat {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(-10deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        transform:
+            translateY(-30vh)
+            translateX(30px)
+            rotate(10deg)
+            scale(0.9);
+    }
+
+    55% {
+        transform:
+            translateY(-60vh)
+            translateX(-30px)
+            rotate(-8deg)
+            scale(1);
+    }
+
+    80% {
+        transform:
+            translateY(-90vh)
+            translateX(25px)
+            rotate(9deg)
+            scale(1.08);
+    }
+
+    100% {
+        transform:
+            translateY(-125vh)
+            translateX(-20px)
+            rotate(-10deg)
+            scale(1.12);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   🥳 BIRTHDAY CAPS
+========================================= */
+
+.big-cap {
+    position: absolute;
+
+    bottom: -160px;
+
+    opacity: 0;
+
+    font-size: 90px;
+
+    filter:
+        drop-shadow(
+            0 10px 15px rgba(160, 70, 120, 0.2)
+        );
+
+    animation: capFloat 6.5s linear infinite;
+}
+
+.cap-left {
+    left: 18%;
+
+    font-size: 90px;
+
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.cap-right {
+    left: 75%;
+
+    font-size: 100px;
+
+    animation-duration: 7.5s;
+    animation-delay: 2.5s;
+}
+
+@keyframes capFloat {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(-20deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.95;
+    }
+
+    35% {
+        transform:
+            translateY(-35vh)
+            translateX(-25px)
+            rotate(20deg)
+            scale(0.9);
+    }
+
+    65% {
+        transform:
+            translateY(-70vh)
+            translateX(25px)
+            rotate(-15deg)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translateY(-125vh)
+            translateX(-20px)
+            rotate(20deg)
+            scale(1.1);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   🎂 BIG FLOATING CAKES
+========================================= */
+
+.big-cake {
+    position: absolute;
+
+    bottom: -180px;
+
+    opacity: 0;
+
+    font-size: 115px;
+
+    filter:
+        drop-shadow(
+            0 10px 18px rgba(160, 70, 120, 0.22)
+        );
+
+    animation: cakeFloat 6s linear infinite;
+}
+
+.cake-one {
+    left: 12%;
+
+    font-size: 115px;
+
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+}
+
+.cake-two {
+    left: 78%;
+
+    font-size: 125px;
+
+    animation-duration: 7.5s;
+    animation-delay: 2.5s;
+}
+
+@keyframes cakeFloat {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(-8deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    35% {
+        transform:
+            translateY(-35vh)
+            translateX(30px)
+            rotate(8deg)
+            scale(0.9);
+    }
+
+    65% {
+        transform:
+            translateY(-70vh)
+            translateX(-25px)
+            rotate(-7deg)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translateY(-125vh)
+            translateX(20px)
+            rotate(8deg)
+            scale(1.1);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   💜 BIG PURPLE HEARTS
+========================================= */
+
+.purple-heart {
+    position: absolute;
+
+    bottom: -170px;
+
+    color: #8b4de8;
+
+    opacity: 0;
+
+    font-size: 90px;
+
+    filter:
+        drop-shadow(
+            0 8px 18px rgba(139, 77, 232, 0.35)
+        );
+
+    animation: purpleHeartFloat 5.5s linear infinite;
+}
+
+.purple-heart-one {
+    left: 38%;
+
+    font-size: 90px;
+
+    animation-duration: 5.5s;
+    animation-delay: 1s;
+}
+
+.purple-heart-two {
+    left: 59%;
+
+    font-size: 115px;
+
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+
+@keyframes purpleHeartFloat {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(-10deg)
+            scale(0.65);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    35% {
+        transform:
+            translateY(-35vh)
+            translateX(-30px)
+            rotate(12deg)
+            scale(0.9);
+    }
+
+    65% {
+        transform:
+            translateY(-70vh)
+            translateX(30px)
+            rotate(-10deg)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translateY(-125vh)
+            translateX(-20px)
+            rotate(12deg)
+            scale(1.1);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+
+    z-index: 10;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.eyebrow {
+    margin-bottom: 22px;
+
+    color: #c94d82;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(70px, 11vw, 125px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #d94b86;
+
+    text-shadow:
+        0 2px 0 #ffffff,
+        0 5px 20px rgba(214, 65, 125, 0.18);
+
+    animation: headingGlow 3s ease-in-out infinite;
+}
+
+h1 span {
+    display: block;
+
+    color: #ed659b;
+}
+
+@keyframes headingGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 2px 0 #ffffff,
+            0 5px 20px rgba(214, 65, 125, 0.12);
+    }
+
+    50% {
+        text-shadow:
+            0 2px 0 #ffffff,
+            0 5px 35px rgba(214, 65, 125, 0.3);
+    }
+}
+
+.intro {
+    max-width: 620px;
+
+    margin: 28px auto 38px;
+
+    color: #70465a;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   🎁 SURPRISE BUTTON
+========================================= */
+
+#surpriseBtn {
+    position: relative;
+
+    padding: 16px 38px;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff72ab,
+            #df3f80
+        );
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 35px rgba(207, 57, 117, 0.28),
+        0 0 0 5px rgba(255, 255, 255, 0.5);
+
+    overflow: hidden;
+
+    transition: 0.35s ease;
+}
+
+#surpriseBtn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.55),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    animation: buttonShine 3s infinite;
+}
+
+@keyframes buttonShine {
+
+    0% {
+        left: -100%;
+    }
+
+    45%,
+    100% {
+        left: 150%;
+    }
+}
+
+#surpriseBtn:hover {
+    transform: translateY(-5px) scale(1.04);
+
+    box-shadow:
+        0 18px 45px rgba(207, 57, 117, 0.35),
+        0 0 0 7px rgba(255, 255, 255, 0.55);
+}
+
+#surpriseBtn:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   SURPRISE CONTENT
+========================================= */
+
+#surpriseContent {
+    position: relative;
+
+    z-index: 10;
+
+    display: none;
+
+    padding-bottom: 80px;
+}
+
+#surpriseContent.show {
+    display: block;
+
+    animation: surpriseReveal 1.2s ease forwards;
+}
+
+@keyframes surpriseReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(55px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    margin-bottom: 110px;
+}
+
+.section-label {
+    text-align: center;
+
+    margin-bottom: 14px;
+
+    color: #d65389;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+}
+
+h2 {
+    text-align: center;
+
+    margin-bottom: 28px;
+
+    color: #d94b86;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(48px, 7vw, 72px);
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   💌 MESSAGE CARD
+========================================= */
+
+.message-section {
+    width: min(730px, 92%);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 55px 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.94),
+            rgba(255, 240, 247, 0.9)
+        );
+
+    border: 2px solid #ffffff;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 25px 70px rgba(207, 65, 125, 0.16);
+
+    backdrop-filter: blur(10px);
+}
+
+.message {
+    text-align: center;
+
+    color: #70465a;
+
+    font-size: 15px;
+
+    line-height: 2;
+}
+
+.signature {
+    margin-top: 28px;
+
+    text-align: center;
+
+    color: #d94b86;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 36px;
+}
+
+
+/* =========================================
+   📸 PHOTO
+========================================= */
+
+.memory-section {
+    text-align: center;
+}
+
+.photo-frame {
+    width: min(470px, 90%);
+
+    margin: 38px auto 22px;
+
+    padding: 11px;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 65px rgba(207, 65, 125, 0.22);
+
+    transform: rotate(-1deg);
+
+    transition: 0.5s ease;
+}
+
+.photo-frame:hover {
+    transform:
+        rotate(0deg)
+        translateY(-5px)
+        scale(1.02);
+}
+
+.photo-frame img {
+    display: block;
+
+    width: 100%;
+    height: 530px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.photo-caption {
+    text-align: center;
+
+    color: #8d6075;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FINAL SECTION
+========================================= */
+
+.final-section {
+    text-align: center;
+
+    padding: 80px 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 179, 210, 0.4),
+            transparent 65%
+        );
+
+    border-radius: 40px;
+}
+
+.final-heart {
+    font-size: 65px;
+
+    animation: heartBeat 1.4s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.22);
+    }
+}
+
+.final-section p {
+    max-width: 550px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #70465a;
+
+    line-height: 1.9;
+}
+
+.made-with {
+    margin-top: 30px !important;
+
+    color: #d94b86 !important;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 32px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    position: relative;
+
+    z-index: 10;
+
+    padding: 30px 20px 40px;
+
+    text-align: center;
+
+    color: #a4778d;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .message-section {
+        padding: 38px 22px;
+    }
+
+    .photo-frame img {
+        height: 430px;
+    }
+
+    .hearts span {
+        font-size: 17px;
+    }
+
+    .sparkles span {
+        font-size: 14px;
+    }
+
+    .big-balloon {
+        font-size: 68px;
+    }
+
+    .balloon-purple {
+        font-size: 78px;
+    }
+
+    .balloon-gold {
+        font-size: 75px;
+    }
+
+    .big-cap {
+        font-size: 60px;
+    }
+
+    .big-cake {
+        font-size: 75px;
+    }
+
+    .purple-heart {
+        font-size: 65px;
+    }
+
+    .purple-heart-two {
+        font-size: 75px;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+}
